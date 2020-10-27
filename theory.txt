@@ -1,0 +1,169 @@
+Early version of websites:
+
+
+Monolithic :
+
+
+Client/Users --------> Servers(Code)
+Window <-------- Servers(After Executing the code)
+
+
+After DB:
+
+Client/Users --------> Servers(Code) ----------> Database
+Window <-------- Servers(After Executing the code) <--------- Database
+
+
+Modern Web:(MEAN)
+
+
+
+1) frontEnd (Html,css and js engine) [ jquery or angular or react]
+2) BackEnd (Rest /Soap  services) [ Websockets & https] {Implment using NOde and express js}
+    - logical implementation
+    - data storage and managment
+3) Database (Relational or Non relational DB);
+    - CRUD
+        -create,read,update,delete
+
+File Storage and File Serving System :
+    - CDN (Content Delivery  Network) :
+            - In every Countries
+    - ADV:
+        - Improving website load times.
+        - Reducing bandwidth cost.
+        - Increasing Content Availablity and redundancy.
+        - Improving website security. (CDN have inbuilt fireball)
+
+Distributed Servers:
+
+
+Static Typed :
+    - Better Code Compilation
+    - Better Performance 
+    - Java,c,c++
+    - help mange datatype valiation easy.
+
+
+Dynamically Typed:
+    - No Compilation required, so lot time is save
+    - easy to learn and managment
+    - chances of syntax error reduced, mostly focused on logical error;
+    - js, python
+
+Javascript : 
+    1) Datatype - var
+
+
+
+// js operators
+
+Arithmetic +,-,mul,div,Modern
+Assigment Operatord = , +=, -=,*= ,/=, %=
+Comparison Operator ==,===, !=, > , <
+Type Operator typeOf 
+
+// diff == and === :
+
+== - it won't check the datatype it will check the value[ all converted into string then compare]
+
+=== - datatype and value comparison
+
+        
+
+conditional Statements
+    - if 
+    - if else ladder
+    - switch 
+
+loops:[ repeat blocks of code base on some condition]
+    - for
+    - while
+    - for/in [ iterate  over objects or arrays]
+    - do while
+
+break : // to come out of the loop
+continue: // to skip the current ith iteration
+
+
+// setup nodejs
+
+//visual studio code - download
+// node - download (latest version)
+
+In visual studio code, .js save file.
+ctrl+shift+` -- open terminal
+node filename.js
+
+special functions/methods:
+
+String Methods:
+var str="";
+1) str.length
+str="karthi"
+output:6
+2) str.indexOf('z')
+output: -1
+3) str.slice(start Position,end Position)
+include start postition
+exculde end postition (till end position - 1)
+4) str.replace(source,replace string)
+5)str.toLowerCase
+str="KarTHi"
+output:karthi
+6) str.toUpperCase()
+7)str.concat(concat String)
+8) converting string to arrays [ return array of strings]
+str="1,2,3,4,5" // output : [1,2,3,4,5]
+str="it is a ball" // output : [ "it","is","a","ball"]
+str.split(' ')
+
+
+Array methods
+
+1) convert array to string
+toString();
+
+2) 
+
+arr=[1,2,3,4,5,6]
+
+pop() // remove last element in the array
+push() // add end of th array
+shift() // remove element (first)
+unshift() // push element at first
+
+const - once value is intialized, we can't change the value. If so, it will throw an error;
+
+Date return value, depends on server and region where server resides.
+
+Date Methods:
+
+//error handling
+
+try -  should contains which possibly throws an error
+catch - would catch the error and remaining lines of code will be executed;
+
+
+
+
+
+Git  - Versioning tool
+
+- organize single project.
+- conflict
+
+Simple app : Sum
+
+programmer 1:
+
+var a=10;
+var b=10;
+var sum=a+b;
+
+
+programmer 2:
+
+var first=100;
+var second=200;
+var firstSumSecond=first+second;

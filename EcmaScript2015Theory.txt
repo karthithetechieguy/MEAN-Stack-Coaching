@@ -1,0 +1,66 @@
+var  --> let
+
+problem statement : problem of variable hoisting
+old js didn't have a block scope;
+js interpreter by shifts all the variable declaration to top; (var)
+let - block scope variable
+
+const - es6
+const - once value is intialized, we can't change the value. If so, it will throw an error;
+
+paramaterized function - (param1,param2)
+non paramaterized function - ()
+
+callBack - which is asynchronos
+function - sync
+
+sync- line by line, next iteration
+async - parallel execution
+
+Arrow functions;
+let functionName=()=>
+{
+
+}
+
+let functionName = function()
+{
+    
+}
+
+//normal
+function functionName()
+{
+
+}
+
+
+Rest Parameters:
+which is used to cater the case where no of parameters passed to a js function may not be fixed;
+
+let functionName=(...param)=>
+{
+
+}
+
+
+
+Template literal : kind of short cut
+variables can be called using $ inside the template literals ``
+
+
+for -  
+for in - index if array index, object key
+for of -  will give direct value // not for objects
+
+
+for Object literal : (Objects)
+let firstName="xyz";
+let lastName="k";
+let obj={
+    firstName, // => firstName:"xyz"
+    lastName
+}
+
+
+
