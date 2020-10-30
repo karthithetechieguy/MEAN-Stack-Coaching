@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>Mini Calc</title>
+</head>
+
+<body>
+    <p>Mini Calculator</p>
+
+    <div class="Calculator">
+        <div class="">
+            <input type="text" id="expression" />
+        </div>
+        <div class="btn-group">
+            <button onclick="infixPostfixConversion()">Infix to postfix</button>
+        </div>
+        <div class="output">
+            <p id="outputInnerHtml"></p>
+        </div>
+
+
+    </div>
+    <div class="card">
+        <h1 class="text-center"> Precedence rules</h1>
+        <p> <b>Bodmas</b></p>
+        <p>bracet</p>
+        <p>division</p>
+        <p>multiplication</p>
+        <p>addition</p>
+        <p>subtraction</p>
+    </div>
+    <div class="card">
+        <h1 class="text-center"> Associavity rules</h1>
+        <p> <b>Bodmas</b></p>
+        <p>
+            addition,subtraction - left to right
+        </p>
+        <p>
+
+            multiplication,division - left to right
+        </p>
+    </div>
+
+    <div class="card">
+        <h1 class="text-center"> Implementation </h1>
+        <p> <b>Stack</b></p>
+        <p>
+            infix to postfix or stack Implementation
+        </p>
+        <p>
+            Eval of postfix
+        </p>
+    </div>
+
+
+
+</body>
+<script>
+    function infixPostfixConversion() {
+
+        var infix = document.getElementById("expression").value;
+
+
+        infixToPostfix(infix);
+    }
+
+    function infixToPostfix(infix) {
+        // 13*2+5/6 = [13,*,2,+,5,'/','6'] => 
+        // hint
+        // regular expression
+        // join in js
+        // staight away implementation
+
+
+        var arr = [],
+            newArray = [];
+
+        var infixArray = infix.split('');
+
+        for (i of infixArray) {
+            console.log(i);
+            if (i != '*' && i != '+' && i != '/' && i != '-') {
+                arr.push(i);
+            } else {
+                //356+45
+                // arr=[]
+                // temp =653 => 6,5,3 => 3,5,6 +> 356
+                let temp = "";
+                while (arr.length > 0)
+                    temp = temp + arr.pop(); // temp+=
+
+                console.log(temp.split('').reverse().join(''));
+
+                newArray.push(temp.split('').reverse().join(''));
+                newArray.push(i);
+
+                //reverse 
+
+            }
+
+        }
+        let temp = "";
+        while (arr.length > 0)
+            temp = temp + arr.pop(); // temp+=
+        console.log(temp.split('').reverse().join(''));
+        newArray.push(temp.split('').reverse().join(''));
+
+
+        document.getElementById("outputInnerHtml").innerHTML = newArray;
+
+    }
+</script>
+
+</html>
